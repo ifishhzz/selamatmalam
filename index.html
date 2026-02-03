@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selamat Malam</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            max-width: 420px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #e0e0e0;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 25px;
+            background: #ffffff;
+            color: #203a43;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: #f1f1f1;
+        }
+
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.4;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <div class="card">
+        <h1>🌙 Selamat Malam</h1>
+        <p>
+            Hari ini mungkin melelahkan, tapi kamu sudah melakukan yang terbaik.
+            Sekarang waktunya istirahat, tenangkan pikiran, dan biarkan malam
+            memelukmu dengan damai.
+        </p>
+        <button class="btn" onclick="showMessage()">Pesan Manis 💫</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Semoga tidurmu nyenyak dan besok bangun dengan semangat baru ✨");
+        }
+    </script>
+
+</body>
+</html>
